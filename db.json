@@ -1,0 +1,14 @@
+{
+  "boards": [
+    {
+      "id": 1,
+      "title": "Frontend",
+      "description": "React + Vite Kanban"
+    },
+    {
+      "id": 2,
+      "title": "Backend",
+      "description": "maybe some microservices"
+    }
+  ]
+}
