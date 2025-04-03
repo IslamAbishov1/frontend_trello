@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BoardList = ({ boards }) => {
+const BoardList = React.memo(function BoardList({ boards }) {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
             {boards.map((board) => (
@@ -17,6 +17,6 @@ const BoardList = ({ boards }) => {
             ))}
         </div>
     )
-}
+})
 
 export default BoardList

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBoards } from '../api/boards'
+import ColumnList from '../components/ColumnList'
 
 const BoardPage = () => {
     const { boardId } = useParams()
@@ -18,13 +19,12 @@ const BoardPage = () => {
     }
 
     return (
-        <div className="p-8 bg-gray-50 dark:bg-gray-900 min-h-screen">
-            <h1 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-8">
+            <h1 className="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">
                 {board.title}
             </h1>
-            <p className="text-gray-700 dark:text-gray-200 mt-2">
-                {board.description}
-            </p>
+            <p className="text-gray-700 dark:text-gray-200">{board.description}</p>
+            {board.columns && <ColumnList columns={board.columns} />}
         </div>
     )
 }
