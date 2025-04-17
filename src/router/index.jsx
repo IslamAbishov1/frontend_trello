@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     {
         path: '/board/:boardId',
         element: <BoardPage />,
-    },
+    }
 ])
 
-export default router
+export default router;

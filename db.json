@@ -1,7 +1,7 @@
 {
   "boards": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Manual QA",
       "description": "Test cases, exploratory testing, etc.",
       "columns": [
@@ -9,15 +9,24 @@
           "id": 1,
           "title": "Up Next",
           "cards": [
-            { "id": 101, "title": "Write test cases for login" },
-            { "id": 102, "title": "Check UI for landing page" }
+            {
+              "id": 101,
+              "title": "Write test cases for login"
+            },
+            {
+              "id": 102,
+              "title": "Check UI for landing page"
+            }
           ]
         },
         {
           "id": 2,
           "title": "In Progress",
           "cards": [
-            { "id": 103, "title": "Regression testing" }
+            {
+              "id": 103,
+              "title": "Regression testing"
+            }
           ]
         },
         {
@@ -29,22 +38,31 @@
           "id": 4,
           "title": "Done",
           "cards": [
-            { "id": 104, "title": "Smoke testing" }
+            {
+              "id": 104,
+              "title": "Smoke testing"
+            }
           ]
         }
       ]
     },
     {
-      "id": 2,
-      "title": "Automation QA",
+      "id": "2",
+      "title": "Automation QA+",
       "description": "Selenium, Cypress, etc.",
       "columns": [
         {
           "id": 1,
           "title": "Up Next",
           "cards": [
-            { "id": 201, "title": "Create Dockerfile for test runs" },
-            { "id": 202, "title": "Add new e2e tests" }
+            {
+              "id": 201,
+              "title": "Create Dockerfile for test runs"
+            },
+            {
+              "id": 202,
+              "title": "Add new e2e tests"
+            }
           ]
         },
         {
@@ -63,6 +81,12 @@
           "cards": []
         }
       ]
+    },
+    {
+      "id": "d1e4",
+      "title": "Part",
+      "description": "Join",
+      "columns": []
     }
   ]
 }
